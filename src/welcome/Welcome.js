@@ -3,27 +3,21 @@ import autobind from "autobind-decorator";
 import * as React from "react";
 import {StyleSheet} from "react-native";
 
-import {Theme, Text, Button, Container} from "../components";
+import {Theme, Text, Button, Container, NavigationHelpers} from "../components";
 import type {ScreenProps} from "../components/Types";
 
 export default class Welcome extends React.Component<ScreenProps<>> {
 
     @autobind
-    signUp() {
-        this.props.navigation.navigate("SignUp");
-    }
-
-    @autobind
     login() {
-        this.props.navigation.navigate("Login");
+        NavigationHelpers.reset(this.props.navigation, "Home");
     }
 
     render(): React.Node {
         return (
             <Container style={styles.container} withGutter>
-                <Text type="header2" style={styles.header} gutterBottom>Welcome to Ting</Text>
-                <Button label="Login" onPress={this.login} full primary contrast />
-                <Button label="Sign Up" onPress={this.signUp} full contrast />
+                <Text type="header2" style={styles.header} gutterBottom>Welcome to Eider</Text>
+                <Button label="Let's Play" onPress={this.login} full primary contrast />
             </Container>
         );
     }

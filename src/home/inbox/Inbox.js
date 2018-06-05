@@ -5,20 +5,47 @@ import {HomeContainer} from "../Home";
 
 import ThreadItem from "./ThreadItem";
 
-import {Text, APIStore} from "../../components";
+import {Text, LoadingIndicator} from "../../components";
 import type {ScreenProps} from "../../components/Types";
 
+const io = require("socket.io-client");
+
 export default class Inbox extends React.PureComponent<ScreenProps<>> {
+    state = {
+        isConnected: false,
+        isLoading: true,
+        users: null
+    };
+    componentDidMount() {
+
+        const socket = io("", {
+            transports: ["websocket"]
+        });
+        socket.on("connect", () => {
+            this.setState({ isConnected: true });
+        });
+        const payload = {operation: "get_all_users"};
+        this.socket.on("message", this.onReceiveMessage);
+        this.socket.emit(payload);
+    }
+
+    onReceiveMessage(message: string) {
+        console.log(message);
+        this.state({users: message, loading: false});
+    }
 
     render(): React.Node {
         const {navigation} = this.props;
-        const threads = APIStore.threads();
+        if (this.state.isLoading) {
+            return (
+                <LoadingIndicator />
+            );
+        }
         return (
             <HomeContainer withGutter>
                 <Text type="header1" gutterBottom>Inbox</Text>
-                <Text gutterBottom>You have no unread messages</Text>
                 {
-                    threads.map(thread => <ThreadItem key={thread.name} {...{ thread, navigation }} />)
+                    this.state.users.map(user => <ThreadItem key={user.name} {...{ user, navigation }} />)
                 }
             </HomeContainer>
         );
