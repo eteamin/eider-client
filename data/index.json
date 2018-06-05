@@ -1,0 +1,217 @@
+{
+   "homes":[
+      {
+         "id":"19115781",
+         "location":{
+            "address":"Hirschengraben 60",
+            "city":"Zürich",
+            "country":"Switzerland",
+            "lon":8.546087,
+            "lat":47.375029
+         },
+         "category1":"Entire apartment",
+         "category2":"1 bedroom",
+         "title":"Centric studio with roof top terrace",
+         "price":{
+            "amount":85,
+            "currency":"CHF"
+         },
+         "rating":{
+            "value":5,
+            "votes":34
+         },
+         "pictures":[
+            "https://firebasestorage.googleapis.com/v0/b/react-native-ting.appspot.com/o/homes%2F19115781%2Fb16db24e-d530-4601-8ac1-9af91e8c06fc.jpg?alt=media&token=46c15767-8008-4e64-bfef-92865faab2c2",
+            "https://firebasestorage.googleapis.com/v0/b/react-native-ting.appspot.com/o/homes%2F19115781%2F22e4999f-ff30-4d8d-9fa2-40ee747cb237.jpg?alt=media&token=8ee47d5b-3abd-4b2d-bee8-2cbdb9310d6b",
+            "https://firebasestorage.googleapis.com/v0/b/react-native-ting.appspot.com/o/homes%2F19115781%2Fedfae94f-3480-40e7-9587-8ebc5e9b465a.jpg?alt=media&token=ebfd0d2f-bebf-476a-bca8-a18d6a9f729e",
+            "https://firebasestorage.googleapis.com/v0/b/react-native-ting.appspot.com/o/homes%2F19115781%2Ff6ff5e2b-bf75-4168-b9c5-6285f789cf61.jpg?alt=media&token=4c944a5a-e4b8-4040-aa1a-ca8db704e76d"
+         ],
+         "host":{
+            "name":"Christina",
+            "picture":"https://firebasestorage.googleapis.com/v0/b/react-native-ting.appspot.com/o/profiles%2F1.jpg?alt=media&token=17ca2afb-78d4-436b-90c6-bc0284cbc5f4"
+         },
+         "description":"Small and cozy top floor studio with its own roof top terrace.\n\nThe studio has been redone in 2017, so it's all new and fresh! It's perfect for 1 - 2 if you are looking for a very centric location to overnight.\n\nKitchen is fully equipped and has dishwasher, microwave, coffee machine, water boiler and toaster.\n\nIt's on the 4th floor (no elevator) with a terrace only for yourself! Has a ladder to climb up and you will be rewarded with fantastic view over Zürich.",
+         "amenities":[
+            "wifi",
+            "kitchen",
+            "internet",
+            "dryer",
+            "washer"
+         ]
+      },
+      {
+         "id":"10055779",
+         "location":{
+            "address":"Zweierstrasse 18",
+            "city":"Zürich",
+            "country":"Switzerland",
+            "lon":8.526580,
+            "lat":47.373071
+         },
+         "category1":"Entire apartment",
+         "category2":"1 bedroom",
+         "title":"Great studio in Zurich center",
+         "price":{
+            "amount":52,
+            "currency":"CHF"
+         },
+         "rating":{
+            "value":4.5,
+            "votes":125
+         },
+         "pictures":[
+            "https://firebasestorage.googleapis.com/v0/b/react-native-ting.appspot.com/o/homes%2F10055779%2F4d82a918-3a61-4da2-965d-e33b76d891f6.jpg?alt=media&token=115f1f99-7dc5-4942-9a60-7d342aae2435",
+            "https://firebasestorage.googleapis.com/v0/b/react-native-ting.appspot.com/o/homes%2F10055779%2F7d2434ee-3cf9-4a33-b8c5-b7c1f60b51b5.jpg?alt=media&token=134cb40a-5237-4f8d-a003-9d96985c3c94",
+            "https://firebasestorage.googleapis.com/v0/b/react-native-ting.appspot.com/o/homes%2F10055779%2Fb9398fc8-d261-46cb-902a-2a6769327b5a.jpg?alt=media&token=dadc6b86-c0ca-42e3-915d-44692d46e206",
+            "https://firebasestorage.googleapis.com/v0/b/react-native-ting.appspot.com/o/homes%2F10055779%2Fe0474957-2346-409b-8e2e-36b3dc5a19f9.jpg?alt=media&token=f5eb70cb-cf05-4a66-83cb-9ef3301bc642"
+         ],
+         "host":{
+            "name":"Alexander",
+            "picture":"https://firebasestorage.googleapis.com/v0/b/react-native-ting.appspot.com/o/profiles%2F12.jpg?alt=media&token=f1883ffd-3b21-4fe0-ac5d-7af88637ed52"
+         },
+         "description":"From main station 5 minutes by train to Wiedikon station and then walk 150 meters to the apartment. Very nice studio, great location in downtown Zurich, easy access by bus and train, very close to shopping and restaurants. Comfortable bed 160, bathroom, kitchen, internet. Ideal if you visit the city for first time. We dont have parking but there is enough space all around to park.\n\nThis is a comfortable and efficient studio, around 27m2, with all the modern comfort, simple and refined decoration. A comfortable king size bed 160, TV, internet, printer, iron are all available to offer you the best stay.\n\nAlso for your confort there is a dining table for two and a giant cushion to relax.",
+         "amenities":[
+            "wifi",
+            "kitchen",
+            "internet",
+            "dryer",
+            "washer"
+         ]
+      },
+      {
+         "id":"15514339",
+         "location":{
+            "address":"Schillerstrasse 2",
+            "city":"Zürich",
+            "country":"Switzerland",
+            "lon":8.547342,
+            "lat":47.365195
+         },
+         "category1":"Entire apartment",
+         "category2":"2 bedrooms",
+         "title":"Perfectly located apartment in city center",
+         "price":{
+            "amount":98,
+            "currency":"CHF"
+         },
+         "rating":{
+            "value":5,
+            "votes":11
+         },
+         "pictures":[
+            "https://firebasestorage.googleapis.com/v0/b/react-native-ting.appspot.com/o/homes%2F15514339%2Fda610101-4088-4190-bf1a-8159a7101d9f.jpg?alt=media&token=8204e005-aad0-4ff4-ac09-e86b76d789d3",
+            "https://firebasestorage.googleapis.com/v0/b/react-native-ting.appspot.com/o/homes%2F15514339%2Fc55e1e6d-e090-4c01-a317-80b2b5e9fe43.jpg?alt=media&token=58aa1ae9-f805-4c74-8faa-bbfabe8d6921",
+            "https://firebasestorage.googleapis.com/v0/b/react-native-ting.appspot.com/o/homes%2F15514339%2F7e9d6fe5-c412-4d81-88cf-5e8971721cb8.jpg?alt=media&token=385bf507-507c-4673-922c-6acc91a67fde",
+            "https://firebasestorage.googleapis.com/v0/b/react-native-ting.appspot.com/o/homes%2F15514339%2F3012808a-733c-48a2-bdc1-59f9fc368126.jpg?alt=media&token=b5d326ce-e3a0-4900-828c-a23c34f3db47"
+         ],
+         "host":{
+            "name":"Tessa",
+            "picture":"https://firebasestorage.googleapis.com/v0/b/react-native-ting.appspot.com/o/profiles%2F4.jpg?alt=media&token=26cb8c71-9332-4784-bf93-26ad2185eebf"
+         },
+         "description":"This spacious apartment is very attractive for families and friends who want to combine a luxury stay with sightseeing Zurich.The apartment is very quiet located and within less than 3 minutes walking you arrive at the lake and the citycentre with a lot of trendy bars, restaurants and shops. The Stadelhofen trainstation is only 2 minutes walking and has a direct connection (18 min) to the airport.",
+         "amenities":[
+            "wifi",
+            "kitchen",
+            "internet",
+            "dryer",
+            "washer"
+         ]
+      },
+      {
+         "id":"299154",
+         "location":{
+            "address":"Magnus Ladulåsgatan 32B",
+            "city":"Stockholm",
+            "country":"Sweden",
+            "lon":59.312085,
+            "lat":18.0619368
+         },
+         "category1":"Entire apartment",
+         "category2":"1 bedroom",
+         "title":"Cosy apartment central at Sodermalm",
+         "price":{
+            "amount":83,
+            "currency":"EUR"
+         },
+         "rating":{
+            "value":4.5,
+            "votes":357
+         },
+         "pictures":[
+            "https://firebasestorage.googleapis.com/v0/b/react-native-ting.appspot.com/o/homes%2F299154%2F794899d7_original.jpg?alt=media&token=98ae33c4-1dc0-4ddb-a392-2be0384ca40e",
+            "https://firebasestorage.googleapis.com/v0/b/react-native-ting.appspot.com/o/homes%2F299154%2Fdef62db3_original.jpg?alt=media&token=04b51095-5f22-41e2-9045-84de99f68239",
+            "https://firebasestorage.googleapis.com/v0/b/react-native-ting.appspot.com/o/homes%2F299154%2Fe71ff5e2_original.jpg?alt=media&token=8eb16c59-6824-4b17-b901-076adacdb8fb"
+         ],
+         "host":{
+            "name":"Daniel",
+            "picture":"https://firebasestorage.googleapis.com/v0/b/react-native-ting.appspot.com/o/profiles%2F11.jpg?alt=media&token=66144f2e-f99c-44eb-ab6d-1a71cc840fe8"
+         },
+         "description":"Very centrally located small apartment at Slussen subway station. Apartment with bed space for four people, balcony with evening sun in summer. Fully equipped kitchen, bathroom with tub and shower, TV with generous selection of channels fast WIFI.",
+         "amenities":[
+            "wifi",
+            "kitchen",
+            "internet",
+            "dryer",
+            "washer"
+         ]
+      }
+   ],
+   "bookings":[
+      {
+         "id":"9bb2",
+         "home":"15514339",
+         "from": 1510084079,
+         "to": 1510170466
+      },
+      {
+          "id": "dee4305b",
+          "home": "299154",
+          "from":1510256866,
+          "to":1510343266
+      }
+   ],
+   "profile":{
+      "name":"Daniela",
+      "picture":"https://firebasestorage.googleapis.com/v0/b/react-native-ting.appspot.com/o/profiles%2F3.jpg?alt=media&token=e1337de3-2707-4ba6-9ae1-40618e07ca41",
+      "memberSince":1420066800
+   },
+   "inbox":{
+      "unreadMessages":0,
+      "threads":[
+         {
+            "date":1510127619,
+            "name":"Christina",
+            "picture":"https://firebasestorage.googleapis.com/v0/b/react-native-ting.appspot.com/o/profiles%2F1.jpg?alt=media&token=17ca2afb-78d4-436b-90c6-bc0284cbc5f4",
+            "messages":[
+               {
+                  "me":true,
+                  "date":1509782591,
+                  "message":"Hello from France 🙋🏼‍♂️. We are three friends looking to spend the week end in Zürich. We love the location of your place! We hope that you can accomodate us."
+               },
+               {
+                  "me":false,
+                  "date":1510127619,
+                  "message":"Hi, Unfortunately the apartment is fully booked. I hope that you will find something great Best wishes"
+               }
+            ]
+         },
+         {
+            "date":1510216027,
+            "name":"Alexander",
+            "picture":"https://firebasestorage.googleapis.com/v0/b/react-native-ting.appspot.com/o/profiles%2F12.jpg?alt=media&token=f1883ffd-3b21-4fe0-ac5d-7af88637ed52",
+            "messages":[
+               {
+                  "me":true,
+                  "date":1509782591,
+                  "message":"I can meet you at the appartement at 6pm on Friday. Let me know if that works for you. My cellsphone is +41 72 436 02 88"
+               },
+               {
+                  "me":false,
+                  "date":1510216027,
+                  "message":"Hello, as we just agreed on by phone, we will meet each other at 20:30. Have a safe journey!"
+               }
+            ]
+         }
+      ]
+   }
+}

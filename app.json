@@ -1,0 +1,24 @@
+{
+    "expo": {
+        "name": "react-native-ting",
+        "version": "1.0.2",
+        "description": "UI elements, multi-screen implemented in React Native, now in one handy kit",
+        "sdkVersion": "26.0.0",
+        "orientation": "portrait",
+        "privacy": "public",
+        "icon": "./app.png",
+        "primaryColor": "#00A699",
+        "splash": {
+            "image": "./splash.png",
+            "resizeMode": "cover",
+            "backgroundColor": "#081F30"
+        },
+        "packagerOpts": {
+            "assetExts": ["otf"]
+        },
+        "androidStatusBar": {
+            "backgroundColor": "#ffffff",
+            "barStyle": "dark-content"
+        }
+    }
+}
