@@ -33,7 +33,7 @@ export default class Button extends React.PureComponent<ButtonProps> {
         if (rounded) {
             baseStyle.push(styles.rounded);
         }
-        const textStyle = contrast && primary ? styles.primaryContrastText : ({});
+        const textStyle = contrast && primary ? styles.secondaryContrastText : ({});
         return (
             <NBButton {...{ primary, transparent, bordered, style: baseStyle, onPress }}>
                 <Text style={[styles.text, textStyle]}>{label}</Text>
@@ -62,6 +62,9 @@ const styles = StyleSheet.create({
     },
     primaryContrastText: {
         color: Theme.palette.primary
+    },
+    secondaryContrastText: {
+        color: Theme.palette.secondary
     },
     text: {
         textAlign: "center"

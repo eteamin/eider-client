@@ -8,7 +8,6 @@ import ThreadItem from "./ThreadItem";
 import {Text, LoadingIndicator} from "../../components";
 import type {ScreenProps} from "../../components/Types";
 
-const io = require("socket.io-client");
 
 export default class Inbox extends React.PureComponent<ScreenProps<>> {
     state = {
@@ -16,17 +15,29 @@ export default class Inbox extends React.PureComponent<ScreenProps<>> {
         isLoading: true,
         users: null
     };
-    componentDidMount() {
 
-        const socket = io("", {
-            transports: ["websocket"]
-        });
-        socket.on("connect", () => {
-            this.setState({ isConnected: true });
-        });
-        const payload = {operation: "get_all_users"};
-        this.socket.on("message", this.onReceiveMessage);
-        this.socket.emit(payload);
+    componentDidMount() {
+        const ws = new WebSocket("ws://172.20.10.3:8585");
+        ws.onopen = () => {
+        // connection opened
+        ws.send('something'); // send a message
+        };
+
+        ws.onmessage = (e) => {
+        // a message was received
+        console.log(e.data);
+        };
+
+        ws.onerror = (e) => {
+        // an error occurred
+        console.log(e.message);
+        };
+
+        ws.onclose = (e) => {
+        // connection closed
+        console.log(e.code, e.reason);
+        };
+        // socket.emit("hello");
     }
 
     onReceiveMessage(message: string) {

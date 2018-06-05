@@ -17,7 +17,7 @@ export default class Welcome extends React.Component<ScreenProps<>> {
         return (
             <Container style={styles.container} withGutter>
                 <Text type="header2" style={styles.header} gutterBottom>Welcome to Eider</Text>
-                <Button label="Let's Play" onPress={this.login} full primary contrast />
+                <Button label="Let's Chat" onPress={this.login} full primary contrast />
             </Container>
         );
     }
@@ -26,9 +26,10 @@ export default class Welcome extends React.Component<ScreenProps<>> {
 const styles = StyleSheet.create({
     container: {
         justifyContent: "center",
-        backgroundColor: Theme.palette.primary
+        backgroundColor: Theme.palette.secondary
     },
     header: {
-        color: "white"
+        color: "white",
+        textAlign: "center"
     }
 });
