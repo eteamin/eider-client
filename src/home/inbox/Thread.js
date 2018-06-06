@@ -25,9 +25,10 @@ export default class ThreadOverview extends React.Component<ScreenParams<{ threa
     };
 
     static getDerivedStateFromProps(props: ScreenParams<{ thread: Thread }>): $Shape<ThreadState> {
-        const {messages} = props.navigation.state.params.thread;
-        messages.reverse();
-        return { messages };
+        // const {messages} = props.navigation.state.params.thread;
+        // messages.reverse();
+        // return { messages };
+        return null;
     }
 
     @autobind
@@ -44,18 +45,17 @@ export default class ThreadOverview extends React.Component<ScreenParams<{ threa
 
     render(): React.Node {
         const {navigation} = this.props;
-        const {thread} = navigation.state.params;
+        const {user} = navigation.state.params;
         const {messages} = this.state;
-        const {name} = APIStore.profile();
         return (
             <SafeAreaView style={styles.container}>
-                <NavHeader title={thread.name} {...{navigation}} />
+                <NavHeader title={user} {...{navigation}} />
                 <FlatList
                     inverted
                     data={messages}
                     keyExtractor={message => `${message.date}`}
                     renderItem={({ item }) => (
-                        <Msg message={item} name={item.me ? name : thread.name} picture={thread.picture} />
+                        <Msg message={item} name={user} />
                     )}
                 />
                 <KeyboardAvoidingView behavior={Platform.OS === "ios" ? "padding" : "height"}>
@@ -89,7 +89,7 @@ const styles = StyleSheet.create({
         borderTopWidth: 1,
         paddingLeft: Theme.spacing.small,
         paddingRight: Theme.spacing.small,
-        flexDirection: "row",
+        flexDirection: "row-reverse",
         alignItems: "center"
     },
     input: {
@@ -97,6 +97,6 @@ const styles = StyleSheet.create({
         flex: 1
     },
     btnText: {
-        color: Theme.palette.primary
+        color: Theme.palette.secondary
     }
 });

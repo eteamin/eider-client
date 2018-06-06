@@ -17,7 +17,8 @@ export default class Welcome extends React.Component<ScreenProps<>> {
         return (
             <Container style={styles.container} withGutter>
                 <Text type="header2" style={styles.header} gutterBottom>Welcome to Eider</Text>
-                <Button label="Let's Chat" onPress={this.login} full primary contrast />
+                <Text type="header3" style={styles.header} gutterBottom>Fast, Secure and Fun!</Text>
+                <Button label="Start Chatting!" onPress={this.login} full primary contrast />
             </Container>
         );
     }

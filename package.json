@@ -1,7 +1,7 @@
 {
-    "name": "react-native-ting",
+    "name": "Eider",
     "version": "1.2.2",
-    "private": true,
+    "private": false,
     "devDependencies": {
         "babel-eslint": "^8.2.1",
         "eslint": "^4.9.0",

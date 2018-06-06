@@ -18,24 +18,23 @@ type MessageProps = {
 export default class ChatMessage extends React.PureComponent<MessageProps> {
 
     render(): React.Node {
-        const {message, name, picture} = this.props;
-        const profile = APIStore.profile();
+        const {message, name} = this.props;
         const style = message.me ? meStyles : sheStyles;
         return (
             <View style={[styles.container, style.container]}>
                 <View style={[styles.message, style.message]}>
                     <Text style={style.text} gutterBottom>{message.message}</Text>
                     <Text type="small" style={style.author}>
-                        {`${name} ${moment(message.date, "X").format("DD MMM YY")}`}
+                        {`${moment(message.date, "X").format("DD MMM h:MM")}`}
                     </Text>
                 </View>
                 <Svg width={Avatar.SIZE / 2} height={Avatar.SIZE / 2} viewBox="0 0 200 200" style={style.svg}>
                     <Svg.Path
                         d="M200,200 L0,200 L0,0 C0,110.45695 89.54305,200 200,200 Z"
-                        fill={message.me ? Theme.palette.primary : gray}
+                        fill={message.me ? Theme.palette.secondary : gray}
                     />
                 </Svg>
-                <Avatar uri={message.me ? profile.picture : picture} style={styles.avatar} />
+                <Avatar uri="http://172.20.10.3:8080/storage/me.png" style={styles.avatar} />
             </View>
         );
     }
@@ -65,21 +64,21 @@ const styles = StyleSheet.create({
 
 const meStyles = StyleSheet.create({
     container: {
-        flexDirection: "row"
+        flexDirection: "row-reverse"
     },
     message: {
         borderBottomRightRadius: 0,
-        backgroundColor: Theme.palette.primary
+        backgroundColor: Theme.palette.secondary
     },
     svg: {
-
+        // transform: [{ rotate: "270deg" }]
     },
     text: {
         color: "white"
     },
     author: {
         color: "white",
-        opacity: 0.7
+        opacity: 0.5
     }
 });
 
@@ -92,7 +91,7 @@ const sheStyles = StyleSheet.create({
         backgroundColor: gray
     },
     svg: {
-        transform: [{ rotate: "270deg" }]
+        transform: [{ rotate: "90deg" }]
     },
     text: {
         color: "#484848"

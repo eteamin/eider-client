@@ -5,44 +5,31 @@ import {HomeContainer} from "../Home";
 
 import ThreadItem from "./ThreadItem";
 
+import WebSocketController from "../../components/WebSocket";
 import {Text, LoadingIndicator} from "../../components";
 import type {ScreenProps} from "../../components/Types";
 
 
 export default class Inbox extends React.PureComponent<ScreenProps<>> {
-    state = {
-        isConnected: false,
-        isLoading: true,
-        users: null
-    };
+    constructor() {
+        super();
 
-    componentDidMount() {
-        const ws = new WebSocket("ws://172.20.10.3:8585");
-        ws.onopen = () => {
-        // connection opened
-        ws.send('something'); // send a message
+        this.state = {
+            isLoading: true,
+            users: null
         };
-
-        ws.onmessage = (e) => {
-        // a message was received
-        console.log(e.data);
-        };
-
-        ws.onerror = (e) => {
-        // an error occurred
-        console.log(e.message);
-        };
-
-        ws.onclose = (e) => {
-        // connection closed
-        console.log(e.code, e.reason);
-        };
-        // socket.emit("hello");
+        const conn = new WebSocketController();
+        this.socket = conn.ws;
     }
 
-    onReceiveMessage(message: string) {
-        console.log(message);
-        this.state({users: message, loading: false});
+    messageReceived(e) {
+        console.log(JSON.parse(e.data).users);
+        this.setState({users: JSON.parse(e.data).users, isLoading: false});
+    }
+
+    componentDidMount() {
+        this.socket.onopen = () => this.socket.send(JSON.stringify({operation: "get_all_users", payload: null}));
+        this.socket.onmessage = this.messageReceived.bind(this);
     }
 
     render(): React.Node {
@@ -54,9 +41,9 @@ export default class Inbox extends React.PureComponent<ScreenProps<>> {
         }
         return (
             <HomeContainer withGutter>
-                <Text type="header1" gutterBottom>Inbox</Text>
+                <Text type="header1" gutterBottom>People</Text>
                 {
-                    this.state.users.map(user => <ThreadItem key={user.name} {...{ user, navigation }} />)
+                    this.state.users.map(thread => <ThreadItem key={thread} {...{ thread, navigation }} />)
                 }
             </HomeContainer>
         );

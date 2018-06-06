@@ -1,6 +1,6 @@
 {
     "expo": {
-        "name": "react-native-ting",
+        "name": "Eider",
         "version": "1.0.2",
         "description": "UI elements, multi-screen implemented in React Native, now in one handy kit",
         "sdkVersion": "26.0.0",
@@ -13,6 +13,10 @@
             "resizeMode": "cover",
             "backgroundColor": "#081F30"
         },
+        "android": {
+            "package": "com.amin.eider"
+        },
+
         "packagerOpts": {
             "assetExts": ["otf"]
         },

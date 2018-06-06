@@ -24,27 +24,26 @@ export default class ThreadItem extends React.Component<ThreadItemProps> {
 
     render(): React.Node {
         const {thread} = this.props;
-        const lastMessage = _.last(thread.messages);
-        const lastActivity = moment(lastMessage.date, "X").format("DD MMM YYYY");
+
         return (
             <TouchableWithoutFeedback onPress={this.openThread}>
                 <View>
                     <View style={styles.container}>
-                        <Avatar uri={thread.picture} />
+                        <Avatar uri="http://172.20.10.3:8080/storage/me.png" />
                         <View style={styles.overview}>
                             <View style={styles.header}>
                                 <Text
                                     numberOfLines={1}
                                     style={styles.name}
                                 >
-                                    {thread.name}
+                                    {"Me"}
                                 </Text>
-                                <Text type="small" numberOfLines={1}>
-                                    {lastActivity}
-                                </Text>
+                                {/*<Text type="small" numberOfLines={1}>*/}
+                                    {/*{lastActivity}*/}
+                                {/*</Text>*/}
                             </View>
                             <Text numberOfLines={1}>
-                                {lastMessage.message}
+                                {"No messages yet!"}
                             </Text>
                         </View>
                     </View>
@@ -56,7 +55,7 @@ export default class ThreadItem extends React.Component<ThreadItemProps> {
 
 const styles = StyleSheet.create({
     container: {
-        flexDirection: "row",
+        flexDirection: "row-reverse",
         alignItems: "center",
         paddingBottom: Theme.spacing.tiny,
         marginBottom: Theme.spacing.tiny,
@@ -65,10 +64,10 @@ const styles = StyleSheet.create({
     },
     overview: {
         flexShrink: 1,
-        marginLeft: Theme.spacing.tiny
+        marginRight: Theme.spacing.tiny
     },
     header: {
-        flexDirection: "row",
+        flexDirection: "row-reverse",
         justifyContent: "space-between",
         marginBottom: Theme.spacing.tiny
     },
